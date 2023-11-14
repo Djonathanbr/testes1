@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    /* cores Iffar */
+    --cor-principal: #32a041;
+    --cor-principal-fraca: #4dd15f;
+    --cor-secundaria: #c8191e;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-geral{
+    
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px black;
+    background: linear-gradient(90deg, var(--cor-principal), var(--cor-principal-fraca),var(--cor-principal));
+}
+
+.container-dia-semana{
+    margin-block: 10px;
+    padding: 10px;
+    
+}
+.container-dia-semana label{
+    font-size: 1.5em;
+   
+}
+
+.container-refeicao{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.container-refeicao input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+
+}
+
+@media (max-width: 800px) {
+    .container-refeicao :nth-child(3){
+        width: 100%;
+    }
+    input {
+        text-align: center;
+        width: calc(50% - 10px); /* ajuste conforme necessário */
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+
