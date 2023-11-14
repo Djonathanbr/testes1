@@ -21,7 +21,7 @@ html,body{
 }
 
 .container-geral{
-    
+    height: 90%;
     margin: 10px;
     padding: 30px;
     border: 1px solid black;
@@ -29,6 +29,7 @@ html,body{
     color: #fff;
     text-shadow: 1px 1px 3px black;
     background: linear-gradient(90deg, var(--cor-principal), var(--cor-principal-fraca),var(--cor-principal));
+    overflow-y: auto;
 }
 
 .container-dia-semana{
